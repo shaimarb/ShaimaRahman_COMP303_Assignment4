@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Success</title>
+</head>
+<body>
+    <h1 th:text="${message}"></h1>
+    <p>Order ID: <span th:text="${order.id}"></span></p>
+    <p>Stock Symbol: <span th:text="${order.stockSymbol}"></span></p>
+    <p>Quantity: <span th:text="${order.quantity}"></span></p>
+    <p>Price: <span th:text="${order.pricePerUnit}"></span></p>
+</body>
+</html>
