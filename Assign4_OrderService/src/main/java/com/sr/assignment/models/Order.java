@@ -3,8 +3,6 @@ package com.sr.assignment.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-
 @Document(collection = "orders") // MongoDB collection name
 public class Order {
     
@@ -15,7 +13,7 @@ public class Order {
     private int quantity;
     private double pricePerUnit;
     private String orderType; // "BUY" or "SELL"
-    private String status; // "PENDING", "COMPLETED", "CANCELLED"
+    private String status; // "PENDING", "COMPLETED"
     
     
 	public String getId() {

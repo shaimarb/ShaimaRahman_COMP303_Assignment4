@@ -1,0 +1,79 @@
+/* style.css */
+
+/* General reset for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the form */
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px; /* Further reduced padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* More compact width */
+    display: flex;
+    align-items: center; /* Center align the form contents */
+}
+
+
+
+/* Label styles */
+label {
+    font-size: 0.9rem; /* Smaller label font size */
+    margin-bottom: 2px; /* Reduced margin for labels */
+    color: #333;
+    width: 100%; /* Ensure labels occupy full width for alignment */
+}
+
+/* Input styles */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 4px; /* More reduced padding inside inputs */
+    margin-bottom: 6px; /* Further reduced space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Smaller font size for input */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 6px; /* Reduced padding in the button */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link to login page below the form */
+p {
+    text-align: center;
+    font-size: 0.8rem; /* Smaller text size for the link */
+    margin-top: 10px; /* Space between form and the link */
+    width: 100%; /* Ensure link spans the width of the form */
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

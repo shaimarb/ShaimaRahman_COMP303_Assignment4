@@ -1,15 +1,16 @@
-package com.sr.assignment;
+package com.sr.assignment.DTO;
 
-import java.io.Serializable;
-
-public class OrderDTO implements Serializable {
+public class OrderDTO {
     private String id;
     private String userId;
     private String stockSymbol;
     private int quantity;
     private double pricePerUnit;
-    private String orderType; // "BUY" or "SELL"
-    private String status; // "PENDING", "COMPLETED", "CANCELLED"
+    private String orderType;
+    private String status;
+
+    // Default constructor
+    public OrderDTO() {}
 
     // Getters and Setters
     public String getId() {

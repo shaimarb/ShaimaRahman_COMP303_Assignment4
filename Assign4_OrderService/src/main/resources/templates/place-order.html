@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Place Order</title>
+            <link rel="stylesheet" th:href="@{/styles.css}" />
+    
 </head>
 <body>
-    <h1>Place Order</h1>
     <!--  <form th:action="@{/orders/place}" method="post">-->
     <form th:action="@{/orders/submitOrder}" method="post">
+        <input type="hidden" name="userId" value="${userId}" />
     
         <label for="stockSymbol">Stock Symbol:</label>
         <input type="text" id="stockSymbol" name="stockSymbol" required>

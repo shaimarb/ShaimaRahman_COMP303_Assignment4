@@ -13,7 +13,7 @@ public class User {
     private String id;  // MongoDB generates this automatically
     private String username;
     private String password;
-    private String userType; // e.g., "Buyer" or "Seller"
+    private String email; 
     
 	public String getId() {
 		return id;
@@ -33,26 +33,28 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getUserType() {
-		return userType;
+	
+	public String getEmail() {
+		return email;
 	}
-	public void setUserType(String userType) {
-		this.userType = userType;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(String id, String username, String password, String userType) {
+	public User(String id, String username, String password, String email) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.userType = userType;
+		this.email = email;
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", userType=" + userType + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", email=" + email + "]";
 	}
     
     
